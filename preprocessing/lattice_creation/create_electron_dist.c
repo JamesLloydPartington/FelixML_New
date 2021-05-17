@@ -9,8 +9,8 @@
 complex I = _Complex_I; //Makes it so z = a + b * I
 
 const int nPix = 128; //Size of square
-const int FileSize = 841;
-const int NumberImages = 19890;
+const int FileSize = 841; //Number of lines inside each StructureFactor file
+const int NumberImages = 19890; //Total number of crystals
 const double RScattFacToVolts = 47.913838;
 const double complex constPi = 2.0 * 3.1415926535 * _Complex_I;
 
