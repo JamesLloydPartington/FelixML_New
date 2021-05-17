@@ -129,7 +129,9 @@ Step 6: Ignore the future cells, this is an outdated most similar program.
 
 2. The VAE
 
-Open Program "tmp_git/FelixML_New/models/generation/direction_000/generator_zmcc.ipynb"
+2.1 Training the VAE
+
+Open program "tmp_git/FelixML_New/models/generation/direction_000/generator_zmcc.ipynb"
 
 Step 1: Run cells 1-7. These cells define functions used in the training processess, as well as the VAE class and its component classes.
 
@@ -144,6 +146,9 @@ Step 4: Assign the desired batch_size, epochs and patience values.
 
 Step 5: Run this cell. The VAE should begin training until it reaches its patience or epoch limit. At the end of each epoch, if the current model has a lower validation loss than the best model, the current model will be saved as the best model. This model can then be loaded into an auxillary program for further analysis while training continues (if desired).
 
+2.2 Load a VAE
+
+The program in 2.1 allows you to load a saved VAE. Using cells 9, 10, 13 you can see what the VAE predicts.
 
 3. Analysis
 
